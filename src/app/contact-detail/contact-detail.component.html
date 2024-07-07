@@ -1,0 +1,10 @@
+<div class="container mt-4" *ngIf="contact">
+    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+    <p><strong>Phone:</strong> {{ contact.phone }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    <p><strong>Address:</strong> {{ contact.address }}</p>
+    <p><strong>Date of Birth:</strong> {{ contact.dob }}</p>
+    <a [routerLink]="['/edit', contact.id]" class="btn btn-warning">Edit</a>
+    <button (click)="deleteContact()" class="btn btn-danger">Delete</button>
+  </div>
+  
