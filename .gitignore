@@ -1,5 +1,19 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# Node modules
+node_modules
+
+# Compiled output
+dist
+out-tsc
+
+# Environment files
+src/environments/environment*.ts
+
+# Angular build artifacts
+.angular
+
+
 # compiled output
 /dist
 /tmp
